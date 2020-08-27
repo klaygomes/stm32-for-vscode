@@ -2,7 +2,7 @@ import { workspace } from 'vscode';
 
 import { merge } from 'lodash';
 
-import { Configuration } from './Types'
+import { Configuration } from './Types';
 
 export function getWorkspaceConfiguration(override?: Configuration): Configuration {
   const rawConfiguration = workspace.getConfiguration('stm32-for-vscode');
@@ -19,6 +19,6 @@ export function getWorkspaceConfiguration(override?: Configuration): Configurati
     make: {
       path: rawConfiguration.makePath || rawConfiguration.cmakePath
     }
-  }
-  return merge(workspaceConfig, override)
+  };
+  return merge(workspaceConfig, override);
 }
