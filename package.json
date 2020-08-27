@@ -133,6 +133,7 @@
   "dependencies": {
     "@types/lodash": "^4.14.149",
     "@types/shelljs": "^0.8.7",
+    "cosmiconfig": "^7.0.0",
     "cpp-include": "^1.1.1",
     "ignore": "^5.1.4",
     "json5": "^2.1.0",
